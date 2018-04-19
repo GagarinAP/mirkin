@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mirkin node example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 content-block">
+                <h3>Mirkin <b>natural-brain</b> example</h3>
+                <p>Send: 'did the tests pass?', Result: 'software'</p>
+                <p>Send: 'did you buy a new drive?', Result: 'hardware'</p>
+                <p>Send: 'What is the capacity?', Result: 'hardware'</p>
+                <p>Send: 'Lets meet tomorrow?', Result: 'meeting'</p>
+                <p>Send: 'Can you play some stuff?', Result: 'music'</p>
+                <div class="input-group">
+                    <input type="text" name="str" class="form-control" placeholder="String...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit" onclick="window.moduleApp.sendStr()">
+                            Send!
+                        </button>
+                    </span>
+                </div>
+                <div id="res" class="text-center"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
